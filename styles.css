@@ -59,17 +59,19 @@ body {
     margin-top: 50px;
     margin-bottom: 30px;
     line-height: 1.2;
+    background-color: #e9ecef;
+    padding: 30px;
 }
 
 .logo-main {
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 700;
     color: #333;
     display: block;
 }
 
 .logo-sub {
-    font-size: 0.8em;
+    font-size: 0.6em;
     font-weight: 400;
     color: #777;
     letter-spacing: 2px;
