@@ -32,7 +32,7 @@
     </div>
 
     <p class="supported-formats">
-        TTF, OTF, WOFF, WOFF2, or SVG. 15 MB per file. Multiupload and drag-and-drop are supported.
+        TTF, OTF, WOFF, WOFF2, or SVG. 1 GB per file. Multiupload and drag-and-drop are supported.
     </p>
 
     <div class="description">
@@ -90,21 +90,40 @@
                 <span class="row-label">Hinting</span>
                 <select>
                     <option>Keep existing</option>
-                    <option>Force Autohint</option>
+                    <option>TTFAutohint</option>
+                    <option>Strip hinting</option>
                 </select>
             </div>
             <div class="setting-row">
                 <span class="row-label">Demo page language</span>
                 <select>
+                    <option>without demo page</option>
                     <option>English</option>
-                    <option>Other</option>
+                    <option>Russian</option>
+                    <option>Georgian</option>
+                    <option>Hindi</option>
                 </select>
             </div>
             <div class="setting-row">
                 <span class="row-label">Subsets</span>
-                <select>
+                <select>  <!-- I am adding some at a someting after research-->
                     <option>All</option>
-                    <option>Basic Latin</option>
+                    <option>Arabic</option>
+                    <option>Bengali</option>
+                    <option>Kannad</option>
+                    <option>Telugu</option>
+                    <option>Gujarati</option>
+                    <option>Malayalam</option>
+                    <option>Myanmar</option>
+                    <option>Tamil</option>
+                    <option>Hindi</option>
+                    <option>Urdu</option>
+                    <option>Nepali</option>
+                    <option>Marathi</option>
+                    <option>Kashmiri</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                    <option>Chinese(Mandarin)</option>
                 </select>
             </div>
             <div class="setting-row">
@@ -118,8 +137,11 @@
             <div class="setting-row new-feature">
                 <span class="row-label">Font display <span>new</span></span>
                 <select>
-                    <option>swap</option>
                     <option>auto</option>
+                    <option>block</option>
+                    <option>swap</option>
+                    <option>fallback</option>
+                    <option>optional</option>
                 </select>
             </div>
             <div class="setting-row new-feature">
@@ -132,7 +154,7 @@
 </main>
 
 <footer>
-    &copy; 2013 - 2025 OddLabs
+    &copy; 2025 - 2035 OddLabs
 </footer>
 
 </body>
