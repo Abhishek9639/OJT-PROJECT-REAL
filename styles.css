@@ -1,0 +1,258 @@
+/* General Reset and Typography */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header/Navigation */
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    padding: 8px 15px;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #4CAF50; /* Green highlight */
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 6px;
+}
+
+.donate-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-left: 20px;
+    font-weight: 700;
+    transition: background-color 0.2s;
+}
+
+.donate-btn:hover {
+    background-color: #45a049;
+}
+
+/* Logo and Title */
+.logo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.logo-main {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #333;
+    display: block;
+}
+
+.logo-sub {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: #777;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+}
+
+/* Action Buttons */
+.actions-row {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-fonts-btn, .convert-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: opacity 0.2s;
+}
+
+.add-fonts-btn {
+    background-color: #428bca; /* Blue */
+    color: white;
+}
+
+.convert-btn {
+    background-color: #5cb85c; /* Green */
+    color: white;
+}
+
+.add-fonts-btn:hover, .convert-btn:hover {
+    opacity: 0.9;
+}
+
+.supported-formats {
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+    font-size: 0.9em;
+}
+
+/* Description */
+.description {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    font-size: 0.95em;
+}
+
+.description p {
+    margin: 0 0 10px 0;
+}
+
+.description p:last-child {
+    margin-bottom: 0;
+}
+
+/* Settings Panel */
+.settings-panel {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 50px;
+}
+
+.setting-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.setting-row {
+    grid-column: 1 / -1; /* Spans across both columns */
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.setting-row:first-of-type {
+    border-top: none;
+}
+
+.row-label {
+    width: 250px;
+    font-weight: bold;
+    color: #555;
+    font-size: 0.95em;
+}
+
+.row-label span.new {
+    background-color: #5cb85c;
+    color: white;
+    font-size: 0.7em;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+/* Form Elements */
+select, input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+    max-width: 400px;
+    font-size: 0.95em;
+}
+
+/* Checkbox Group */
+.checkbox-group label {
+    margin-right: 20px;
+    font-size: 0.95em;
+}
+
+/* Toggle Switch Styling (Simplified) */
+.toggle-label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    background-color: #ccc;
+    border-radius: 4px;
+    padding: 3px;
+    width: 50px;
+    justify-content: space-between;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toggle-label input {
+    display: none;
+}
+
+.toggle-label .toggle-text {
+    padding: 0 5px;
+    color: #555;
+}
+
+.toggle-label .on {
+    background-color: #5cb85c; /* Green background for 'On' */
+    color: white;
+    border-radius: 2px;
+    padding: 0 5px;
+}
+
+.toggle-label:has(input:checked) {
+    background-color: #5cb85c;
+}
+
+.toggle-label:has(input:checked) .toggle-text:first-child {
+    background-color: white;
+    color: #5cb85c;
+    border-radius: 2px;
+}
+
+.toggle-label:has(input:not(:checked)) .toggle-text:first-child {
+    order: 2; /* Move 'Off' to the right */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+    font-size: 0.85em;
+    border-top: 1px solid #eee;
+}

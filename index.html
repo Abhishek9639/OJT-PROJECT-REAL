@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webfont Generator - Recreation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="top-nav">
+    <div class="nav-links">
+        <a href="#" class="active">Webfont generator</a>
+        <a href="#">Unpack TTC</a>
+        <a href="#">Font formats</a>
+        <a href="#">Examples</a>
+        <a href="#">Feedback</a>
+    </div>
+    <a href="#" class="donate-btn">Donate</a>
+</header>
+
+<main class="container">
+    <h1 class="logo">
+        <span class="logo-main">transfonter</span>
+        <span class="logo-sub">MODERN AND SIMPLE CSS @FONT-FACE GENERATOR</span>
+    </h1>
+
+    <div class="actions-row">
+        <button class="add-fonts-btn">Add fonts</button>
+        <button class="convert-btn">Convert</button>
+    </div>
+
+    <p class="supported-formats">
+        TTF, OTF, WOFF, WOFF2, or SVG. 15 MB per file. Multiupload and drag-and-drop are supported.
+    </p>
+
+    <div class="description">
+        <p>The **@font-face CSS rule** allows web developers to specify online fonts to display text on their web pages. By allowing authors to provide their own fonts, **@font-face** eliminates the need to depend on the limited number of fonts users have installed on their computers.</p>
+        <p><strong>Usage:</strong> click the **Add font(s)** button, select the TTF, OTF, WOFF, WOFF2, or SVG fonts on your computer and click **Convert**. Download zip archive with converted fonts, CSS styles and demo page. That's all!</p>
+    </div>
+
+    <div class="settings-panel">
+        <div class="settings-grid">
+            <div class="setting-item">
+                <label class="toggle-label">
+                    <span class="toggle-text">On</span>
+                    <input type="checkbox" checked>
+                    <span class="slider round on"></span>
+                </label>
+                <span class="label-text">Family support</span>
+            </div>
+            <div class="setting-item">
+                <label class="toggle-label">
+                    <span class="toggle-text">Off</span>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="label-text">Fix vertical metrics</span>
+            </div>
+            <div class="setting-item">
+                <label class="toggle-label">
+                    <span class="toggle-text">Off</span>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="label-text">Add local rule</span>
+            </div>
+            <div class="setting-item">
+                <label class="toggle-label">
+                    <span class="toggle-text">Off</span>
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <span class="label-text">Base64 encode</span>
+            </div>
+
+            <div class="setting-row">
+                <span class="row-label">Formats</span>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> TTF</label>
+                    <label><input type="checkbox" checked> WOFF</label>
+                    <label><input type="checkbox"> SVG</label>
+                    <label><input type="checkbox"> EOT</label>
+                    <label><input type="checkbox" checked> WOFF2</label>
+                </div>
+            </div>
+
+            <div class="setting-row">
+                <span class="row-label">Hinting</span>
+                <select>
+                    <option>Keep existing</option>
+                    <option>Force Autohint</option>
+                </select>
+            </div>
+            <div class="setting-row">
+                <span class="row-label">Demo page language</span>
+                <select>
+                    <option>English</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="setting-row">
+                <span class="row-label">Subsets</span>
+                <select>
+                    <option>All</option>
+                    <option>Basic Latin</option>
+                </select>
+            </div>
+            <div class="setting-row">
+                <span class="row-label">Characters</span>
+                <input type="text" value="0123abcDE etc.">
+            </div>
+            <div class="setting-row">
+                <span class="row-label">Unicode ranges</span>
+                <input type="text" value="002D-007E, u024F, U+0400-04FF, 41-5A etc.">
+            </div>
+            <div class="setting-row new-feature">
+                <span class="row-label">Font display <span>new</span></span>
+                <select>
+                    <option>swap</option>
+                    <option>auto</option>
+                </select>
+            </div>
+            <div class="setting-row new-feature">
+                <span class="row-label">Fonts directory <span>new</span></span>
+                <input type="text" value="path/to/directory">
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2013 - 2025 OddLabs
+</footer>
+
+</body>
+</html>
