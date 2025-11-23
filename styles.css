@@ -30,6 +30,7 @@ body {
     padding: 8px 15px;
     font-size: 14px;
     transition: color 0.2s;
+    padding: 20px;
 }
 
 .nav-links a:hover, .nav-links a.active {
@@ -246,9 +247,14 @@ select, input[type="text"] {
 
 footer {
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
     color: #999;
     font-size: 0.85em;
     border-top: 1px solid #eee;
     background-color: #131A22;
+}
+
+.donate1 {
+    margin-left: 400px;
+    padding-bottom: 10px;
 }
